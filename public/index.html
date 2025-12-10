@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebRTC Demo</title>
+    <title>Mya's Video Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>WebRTC Video Chat</h1>
-
-    <input id="room" placeholder="Enter room name">
-    <button id="joinBtn">Join</button>
-
-    <div class="videos">
-        <video id="localVideo" autoplay playsinline></video>
-        <video id="remoteVideo" autoplay playsinline></video>
+    <div id="app-container">
+        <h1>💖 Mya's Sparkle Chat 💖</h1>
+        <div id="video-area">
+            <video id="localVideo" autoplay playsinline muted></video>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        <button id="callButton">Start a Sparkle Call</button>
+        <p>Your room: <span id="room-id"></span></p>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="script.js"></script>
+    <script src="client.js"></script>
 </body>
 </html>
-
