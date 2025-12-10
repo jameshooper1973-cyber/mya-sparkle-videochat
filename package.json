@@ -1,9 +1,11 @@
 {
   "name": "myas-vid-chat",
   "version": "1.0.0",
-  "description": "WebRTC video chat for Mya",
+  "description": "WebRTC signaling server for Mya's Sparkle Chat",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.7.2"
